@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(/D:\\iaxixi\\luoba_iaxixi\\src\\app/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
