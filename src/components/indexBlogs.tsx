@@ -65,7 +65,7 @@ const sidebarPosts: SidebarPost[] = [
 export default function BlogsPage() {
     return (
         <div className="bg-white">
-            <div className="max-w-7xl mx-auto px-6 py-8">
+            <div className="max-w-7xl mx-auto px-6 py-8 pt-16 pb-0">
                 <div className="flex gap-8">
                     {/* 主内容区 */}
                     <div className="flex-1">
@@ -118,7 +118,7 @@ export default function BlogsPage() {
                                 ))}
                             </div>
                             <div className="w-120">
-                                <div className="bg-white rounded-lg p-6 py-0">
+                                <div className="bg-white rounded-lg p-6 py-0 pr-0">
                                     <div className="space-y-6">
                                         {sidebarPosts.map((post) => (
                                             <article key={post.id} className="pb-4 last:pb-0 h-40 bg-[#FAFAFA] p-4">

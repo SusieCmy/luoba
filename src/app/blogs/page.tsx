@@ -51,7 +51,7 @@ const sidebarPosts: SidebarPost[] = [
   },
   {
     id: 2,
-    title: "马斯克招募脑机接口"小白鼠"：首批人体临床，为期8年，须年满22岁。",
+    title: "马斯克招募脑机接口小白鼠：首批人体临床，为期8年，须年满22岁。",
     author: "telangpu",
     date: "2025-05-21 18:32"
   },
@@ -67,7 +67,7 @@ export default function BlogsPage() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      
+
       <div className="max-w-7xl mx-auto px-6 py-8">
         <div className="flex gap-8">
           {/* 主内容区 */}

@@ -100,17 +100,17 @@ export default function RecommendedArticles() {
               </div>
 
               {/* 文章内容 */}
-              <div className="space-y-3">
+              <div className="space-y-3 h-[155px] flex flex-col justify-between">
                 {/* 分类标签 */}
                 <div className="">
                   {/* ${article.categoryColor} */}
                   <span className={`bg-[#DFF1F0] text-[#666666] px-3 py-1 rounded-lg text-sm font-medium`}>
                     {article.category}
                   </span>
-                </div>
-                <h3 className="text-lg font-semibold text-gray-900 leading-tight group-hover:text-teal-600 transition-colors line-clamp-2">
+                  <h3 className="text-lg mt-4 leading-loose font-semibold text-gray-900 group-hover:text-teal-600 transition-colors line-clamp-2">
                   {article.title}
                 </h3>
+                </div>
                 
                 <div className="flex items-center justify-between text-sm text-gray-500">
                   <div className="flex items-center gap-3">

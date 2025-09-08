@@ -25,8 +25,8 @@ export default function Home() {
         <RecommendedUsers />
         <RecommendedArticles />
       </main>
-      <footer className="footer sm:footer-horizontal bg-[#F2F8F7] p-6 h-80 pt-20">
-        <aside>
+      <footer className="footer sm:footer-horizontal bg-[#F2F8F7] p-6 h-80 pt-20 justify-items-center">
+        <aside className="">
           <Image
             aria-hidden
             src="/logo.png"
@@ -60,9 +60,12 @@ export default function Home() {
           <a className="link link-hover text-[#555555]">Jobs</a>
           <a className="link link-hover text-[#555555]">隐私政策</a>
         </nav>
-        <nav>
+        <nav className="">
           <h6 className="footer-title text-[#000000]">意见反馈</h6>
-          <input type="text" placeholder="请输入您的内容" className="input input-accent" />
+          <div className="join">
+            <input type="text" placeholder="请输入您的内容" className="input input-accent w-80" />
+            <button className="btn btn-neutral bg-[#00AAA1] border-0 shadow-0 join-item w-20">发送</button>
+          </div>
           <h6 className="footer-title text-[#000000]">关注我们</h6>
           <div className="grid grid-cols-4 gap-4">
             <Image

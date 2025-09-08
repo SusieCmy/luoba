@@ -61,7 +61,7 @@ const users: User[] = [
 
 export default function RecommendedUsers() {
   return (
-    <section className="bg-white py-16">
+    <section className="bg-white py-16 pb-0">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between mb-12">
           <div className="flex items-center">
@@ -84,7 +84,7 @@ export default function RecommendedUsers() {
           {users.map((user) => (
             <div
               key={user.id}
-              className={`relative p-6 rounded-[14px] transition-all duration-300 hover:shadow-lg hover:bg-gradient-to-br from-teal-50 to-blue-50 border-2 border-amber-50 hover:border-teal-300`}
+              className={`relative p-6 rounded-[14px] transition-all bg-[#FAFAFA] duration-300 hover:shadow-lg hover:bg-gradient-to-br from-teal-50 to-blue-50 border-2 border-[#fff] hover:border-teal-300`}
             >
               <div className="text-center">
                 <div className="relative w-20 h-20 mx-auto mb-4">
