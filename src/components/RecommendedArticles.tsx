@@ -96,7 +96,7 @@ export default function RecommendedArticles() {
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
                 />
-                
+
               </div>
 
               {/* 文章内容 */}
@@ -108,17 +108,20 @@ export default function RecommendedArticles() {
                     {article.category}
                   </span>
                   <h3 className="text-lg mt-4 leading-loose font-semibold text-gray-900 group-hover:text-teal-600 transition-colors line-clamp-2">
-                  {article.title}
-                </h3>
+                    {article.title}
+                  </h3>
                 </div>
-                
+
                 <div className="flex items-center justify-between text-sm text-gray-500">
                   <div className="flex items-center gap-3">
                     <div className="flex items-center gap-2">
                       <div className="w-5 h-5 bg-gray-300 rounded-full"></div>
                       <span>{article.author}</span>
                     </div>
-                    <span>{article.date}</span>
+                    <span className="flex">
+                      <img src="/index/tm.svg" alt="" />
+                      <p className="ml-1">{article.date}</p>
+                    </span>
                   </div>
                   <div className="flex items-center gap-1">
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -138,7 +141,7 @@ export default function RecommendedArticles() {
           <button className="px-3 py-2 text-gray-500 hover:text-gray-700 transition-colors">
             回到首页
           </button>
-          
+
           <div className="flex items-center gap-1 mx-4">
             <button className="w-8 h-8 flex items-center justify-center text-teal-600 bg-teal-50 rounded hover:bg-teal-100 transition-colors">
               1
