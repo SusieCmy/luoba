@@ -19,7 +19,7 @@ const users: User[] = [
     id: 1,
     name: "AJLJSJN",
     description: "暂无简介",
-    avatar: "/tx1.png", // 使用现有资源作为占位符
+    avatar: "/index/tx1.png", // 使用现有资源作为占位符
     tags: [
       { label: "动漫", color: "primary" },
       { label: "追剧", color: "secondary" }
@@ -29,7 +29,7 @@ const users: User[] = [
     id: 2,
     name: "胖布丁慧慧",
     description: "爱美美食自恋的小胖第一枚",
-    avatar: "/tx2.png",
+    avatar: "/index/tx2.png",
     isHighlighted: true,
     tags: [
       { label: "健身", color: "primary" },
@@ -41,7 +41,7 @@ const users: User[] = [
     id: 3,
     name: "阿拉斯加了",
     description: "爱美美食恋的小胖第一枚",
-    avatar: "/tx3.png",
+    avatar: "/index/tx3.png",
     tags: [
       { label: "宅家", color: "primary" },
       { label: "韩剧", color: "primary" }
@@ -51,7 +51,7 @@ const users: User[] = [
     id: 4,
     name: "椰子yeeez",
     description: "爱美美食恋的小胖第一枚",
-    avatar: "/tx4.png",
+    avatar: "/index/tx4.png",
     tags: [
       { label: "摄影", color: "primary" },
       { label: "音乐", color: "primary" }

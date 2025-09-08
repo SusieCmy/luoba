@@ -20,7 +20,7 @@ const articles: Article[] = [
     author: "Jessica Koti",
     date: "2023-10-05 21:53:57",
     views: "123人看过",
-    image: "/wz1.png"
+    image: "/index/wz1.png"
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ const articles: Article[] = [
     author: "科技客串",
     date: "2023-10-05 21:53:57",
     views: "456人看过",
-    image: "/wz2.png"
+    image: "/index/wz2.png"
   },
   {
     id: 3,
@@ -40,7 +40,7 @@ const articles: Article[] = [
     author: "程序员小王",
     date: "2023-10-05 21:53:57",
     views: "789人看过",
-    image: "/wz3.png"
+    image: "/index/wz3.png"
   },
   {
     id: 4,
@@ -50,7 +50,7 @@ const articles: Article[] = [
     author: "Linda Trender",
     date: "2023-10-05 21:53:57",
     views: "321人看过",
-    image: "/wz4.png"
+    image: "/index/wz4.png"
   },
   {
     id: 5,
@@ -60,7 +60,7 @@ const articles: Article[] = [
     author: "大美大理",
     date: "2023-10-05 21:53:57",
     views: "654人看过",
-    image: "/wz5.png"
+    image: "/index/wz5.png"
   },
   {
     id: 6,
@@ -70,7 +70,7 @@ const articles: Article[] = [
     author: "李现心理",
     date: "2023-10-05 21:53:57",
     views: "987人看过",
-    image: "/wz6.png"
+    image: "/index/wz6.png"
   }
 ];
 

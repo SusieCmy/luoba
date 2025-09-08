@@ -49,7 +49,7 @@ export default function Header() {
                 </div>
               </div>
             </div>
-            <Link href="/blogs" className="text-gray-700 hover:text-teal-600 font-medium transition-colors">
+            <Link href="/blog" className="text-gray-700 hover:text-teal-600 font-medium transition-colors">
               文章
             </Link>
           </nav>
@@ -99,7 +99,7 @@ export default function Header() {
               <button className="flex items-center gap-2">
                 <div className="w-8 h-8 rounded-full bg-gradient-to-br from-pink-400 to-purple-500 flex items-center justify-center text-white text-sm font-medium">
                   <Image
-                    src="/tx.png"
+                    src="/index/tx.png"
                     alt="用户头像"
                     width={40}
                     height={40}

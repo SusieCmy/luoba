@@ -27,7 +27,7 @@ const blogPosts: BlogPost[] = [
         date: "2023-10-05 21:53:57",
         views: "123人看过",
         category: "旅行",
-        image: "/home1.png"
+        image: "/index/home1.png"
     },
     {
         id: 2,
@@ -37,7 +37,7 @@ const blogPosts: BlogPost[] = [
         date: "2023-10-05 21:53:57",
         views: "123人看过",
         category: "旅行",
-        image: "/home2.png"
+        image: "/index/home2.png"
     }
 ];
 
