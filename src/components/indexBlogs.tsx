@@ -71,7 +71,7 @@ export default function BlogsPage() {
                     <div className="flex-1">
                         <div className="flex items-center mb-8">
                             <h1 className="text-2xl font-semibold text-gray-900">本周精选</h1>
-                            <div className="w-1 h-4 bg-teal-500 ml-4"></div>
+                            <div className="w-1 h-4 bg-teal-500 ml-4  rounded-[10px]"></div>
                         </div>
                         <div className="flex">
                             <div className="space-y-8">
@@ -127,7 +127,7 @@ export default function BlogsPage() {
                                             <article key={post.id} className="pb-4 last:pb-0 h-40 bg-[#FAFAFA] p-4">
                                                 <div className="flex items-center text-xs text-gray-500">
                                                     <span className="text-[#00AAA1]">{post.author}</span>
-                                                    <span className="w-0.5 h-2 bg-[#ccc] mx-2"></span>
+                                                    <span className="w-[1px] h-2 bg-[#ccc] mx-2 rounded-[10px]"></span>
                                                     <span>{post.date}</span>
                                                 </div>
                                                 <p className="font-semibold text-[18px] leading-normal mt-4 text-[#555555] mb-2 cursor-pointer">

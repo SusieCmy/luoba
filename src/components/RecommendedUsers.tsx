@@ -66,7 +66,7 @@ export default function RecommendedUsers() {
         <div className="flex items-center justify-between mb-12">
           <div className="flex items-center">
             <h2 className="text-2xl font-semibold text-gray-900">推荐用户</h2>
-            <div className="w-1 h-4 bg-teal-500 ml-4"></div>
+            <div className="w-1 h-4 bg-teal-500 ml-4 rounded-[10px]"></div>
           </div>
           <button className="text-gray-500 hover:text-gray-700 transition-colors">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -98,24 +98,23 @@ export default function RecommendedUsers() {
                     />
                   </div>
                 </div>
-                
+
                 <h3 className="font-semibold text-lg text-gray-900 mb-2">
                   {user.name}
                 </h3>
-                
+
                 <p className="text-sm text-gray-600 mb-4 leading-relaxed">
                   {user.description}
                 </p>
-                
+
                 <div className="flex flex-wrap gap-2 justify-center">
                   {user.tags.map((tag, index) => (
                     <span
                       key={index}
-                      className={`px-3 py-1 rounded-lg text-xs font-medium transition-colors ${
-                        tag.color === 'primary'
+                      className={`px-3 py-1 rounded-lg text-xs font-medium transition-colors ${tag.color === 'primary'
                           ? 'bg-white border border-gray-300 text-gray-700 hover:bg-gray-50'
                           : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-                      }`}
+                        }`}
                     >
                       {tag.label}
                     </span>

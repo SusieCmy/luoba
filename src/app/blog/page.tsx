@@ -6,7 +6,7 @@ export default function BlogDetail() {
       <div className="max-w-7xl mx-auto px-4 py-8">
         <div className="flex gap-8">
           {/* 主内容区域 */}
-          <div className="flex-1 bg-white rounded-lg shadow-sm">
+          <div className="flex-1 bg-white rounded-lg ">
             {/* 文章标题和作者信息 */}
             <div className="p-6">
               <h1 className="text-2xl font-bold text-gray-900 mb-4">
@@ -68,27 +68,27 @@ export default function BlogDetail() {
 
               {/* 文章正文 */}
               <div className="prose max-w-none">
-                <p className="text-gray-700 mb-6 leading-relaxed">
+                <p className="text-gray-700 mb-6 text-[14px] leading-6">
                   每年九月底十月初，是最值得去 北疆 看风景，秋风渐凉， 禾木 村入云的雪山、金黄的木屋、再加上白桦林层的林尽染，小村的秋色格外灿烂绚丽。炊烟云雾缭绕的梦幻景致，让人觉得恍如隔世，如一个美丽的童话世界。
                 </p>
 
                 <h2 className="text-xl font-semibold text-gray-900 mb-4">缆车滑雪初体验</h2>
-                <p className="text-gray-700 mb-4 leading-relaxed">
+                <p className="text-gray-700 mb-4 text-[14px] leading-6">
                   我们此行是包车自驾路线，从 喀纳斯 到 禾木 1.5小时车程，就必须换景区的车进入了，到 禾木 景区门票站后区间车进村庄再换乘2次，也需要1小时，可以说是路途遥远多波折了。喀纳斯往禾木方向🚗路上随遇而安的风景，没有纷扰的人群，才是最难得的美景。
                 </p>
-                <p className="text-gray-700 mb-4 leading-relaxed">
+                <p className="text-gray-700 mb-4 text-[14px] leading-6">
                   中途看到有毡房卖现烤的羊肉串，依山傍水的风景还很美，便停车下来，准备在这里午餐。没想随性偶遇的美食却是意外的新鲜好吃，获得大家一致好评，变成我们此行吃过最美味羊肉串。停车拍照也是我们这一路最欢乐的事情📷其实相比起景区乌央乌央赶场，不如一路羊群和山景的自然惬意之美。</p>
                 <div className="bg-[#F2F8F7] p-4 rounded-lg mb-6">
-                  <p className="text-gray-700 text-sm">
+                  <p className="text-gray-700 text-[14px] leading-6">
                     禾木许多地方是需要徒步的，如也可以选择骑马游玩，也是一种不错的体验，不同行程不同价格， 比如选择骑马上观景台，加上拍照休息，往返大约1小时，也是比较舒适的行程，由当地的哈萨克人牵马或和你一起骑上观景台。禾木住宿以木屋为主，乡内有很多民宿，驿站、客栈，洗浴设施较简单，建议提前定好房间。</p>
                 </div>
-                <p className="text-gray-700 mb-4 leading-relaxed">
+                <p className="text-gray-700 mb-4 text-[14px] leading-6">
                   住在被白桦林包围的美丽村落，风景真是美。 禾木是个安静美丽的小镇，上午和下午的光影不同，适合拍摄的地方也不同〜建议至少住上2晚1天，感受这里的慢时光。</p>
-                <p className="text-gray-700 mb-4 leading-relaxed">
+                <p className="text-gray-700 mb-4 text-[14px] leading-6">
                   当地政府为了不破坏这里的整体，禁止小木屋做太多修改，据说 桃源 山庄也是租下了当地人的木屋装修成民宿，不同房型散布在村落两头，有水景房也有村景房。</p>
                 <h2 className="text-xl font-semibold text-gray-900 mb-4">旅行小贴士</h2>
-                <p className="text-gray-700 mb-6 leading-relaxed">
-                  <ul className="list-none text-sm ">
+                <p className="text-gray-700 mb-6 text-[14px] leading-6">
+                  <ul className="list-none text-sm">
                     <li className="mb-2">1. 新疆 天气多变化，早穿棉袄午穿纱是常有的事，所以一定要备好防寒的衣物。</li>
                     <li className="mb-2">2. 想拍美照可以穿颜色明快的衣服，亮色或大气的风衣外套比较出片，我这次选择牛仔衣外搭斗篷，保暖又上镜，可以哦。</li>
                     <li className="mb-2">3. 紫外线强，墨镜、口罩、围巾、手套、帽子都必不可少。</li>
@@ -164,10 +164,10 @@ export default function BlogDetail() {
           {/* 右侧边栏 */}
           <div className="w-80 space-y-6">
             {/* 推荐作者 */}
-            <div className="bg-white rounded-lg shadow-sm p-6">
+            <div className="bg-white rounded-lg  p-6">
               <div className="flex items-center mb-8">
                 <h3 className="text-lg font-semibold text-gray-900">本周精选</h3>
-                <div className="w-1 h-4 bg-teal-500 ml-2"></div>
+                <div className="w-1 h-4 bg-teal-500 ml-2 rounded-[10px]"></div>
               </div>
               <div className="space-y-4">
                 {[1, 2, 3].map((item) => (
@@ -183,7 +183,7 @@ export default function BlogDetail() {
                       <div className="font-medium text-sm text-gray-900">推荐作者{item}</div>
                       <div className="text-xs text-gray-500">前端开发工程师</div>
                     </div>
-                    <button className="bg-blue-500 text-white px-3 py-1 rounded-lg text-xs hover:bg-blue-600">
+                    <button className="bg-[#00AAA1] text-white px-3 py-1 rounded-lg text-xs">
                       关注
                     </button>
                   </div>
@@ -192,19 +192,18 @@ export default function BlogDetail() {
             </div>
 
             {/* 广告位 */}
-            <div className="bg-gradient-to-r from-blue-500 to-teal-500 rounded-lg p-6 text-white">
-              <h3 className="font-semibold mb-2">码上睿步工程师</h3>
-              <p className="text-sm opacity-90 mb-4">提升你的编程技能，开启职业新篇章</p>
-              <button className="bg-white text-blue-500 px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-100">
-                了解更多
-              </button>
-            </div>
+            <Image
+              src="/details/adv.png"
+              alt="广告"
+              width={320}
+              height={120}
+            ></Image>
 
             {/* 最新动态 */}
-            <div className="bg-white rounded-lg shadow-sm p-6">
+            <div className="bg-white rounded-lg  p-6">
               <div className="flex items-center mb-8">
                 <h3 className="text-lg font-semibold text-gray-900">最新动态</h3>
-                <div className="w-1 h-4 bg-teal-500 ml-2"></div>
+                <div className="w-1 h-4 bg-teal-500 ml-2 rounded-[10px]"></div>
               </div>
               <div className="space-y-4">
                 {[1, 2, 3, 4].map((item) => (
@@ -219,10 +218,10 @@ export default function BlogDetail() {
             </div>
 
             {/* 相关文章 */}
-            <div className="bg-white rounded-lg shadow-sm p-6">
+            <div className="bg-white rounded-lg  p-6">
               <div className="flex items-center mb-8">
                 <h3 className="text-lg font-semibold text-gray-900">相关文章</h3>
-                <div className="w-1 h-4 bg-teal-500 ml-2"></div>
+                <div className="w-1 h-4 bg-teal-500 ml-2 rounded-[10px]"></div>
               </div>
               <div className="space-y-4">
                 {[1, 2, 3].map((item) => (
