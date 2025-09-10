@@ -16,8 +16,8 @@ export default function Header() {
                 width={192}
                 height={192}
                 style={{
-                  width: '118px',
-                  height: '28px',
+                  width: '152px',
+                  height: '34px',
                   objectFit: 'cover'
                 }}
               />
@@ -26,38 +26,42 @@ export default function Header() {
 
           {/* 中间导航菜单 */}
           <nav className="hidden md:flex items-center gap-8">
-            <Link href="/" className="text-gray-700 hover:text-teal-600 font-medium transition-colors">
+            <Link href="/" className="text-[#333333] hover:text-teal-600 font-medium transition-colors">
               主页
             </Link>
             <div className="relative group">
-              <button className="flex items-center gap-1 text-gray-700 hover:text-teal-600 font-medium transition-colors">
+              <button className="flex items-center gap-1 text-[#333333] hover:text-teal-600 font-medium transition-colors">
                 分类
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
+                <Image
+                  src="/index/se.svg"
+                  alt="arrow-down"
+                  className="hover:text-teal-600"
+                  width={12}
+                  height={12}
+                />
               </button>
               {/* 下拉菜单 */}
               <div className="absolute top-full left-0 mt-1 w-48 bg-white shadow-lg rounded-lg border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                 <div className="py-2">
-                  <Link href="/blogs?category=travel" className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-teal-600">
+                  <Link href="/blogs?category=travel" className="block px-4 py-2 text-[#333333] hover:bg-gray-50 hover:text-teal-600">
                     旅行
                   </Link>
-                  <Link href="/blogs?category=food" className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-teal-600">
+                  <Link href="/blogs?category=food" className="block px-4 py-2 text-[#333333] hover:bg-gray-50 hover:text-teal-600">
                     美食
                   </Link>
-                  <Link href="/blogs?category=lifestyle" className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-teal-600">
+                  <Link href="/blogs?category=lifestyle" className="block px-4 py-2 text-[#333333] hover:bg-gray-50 hover:text-teal-600">
                     日常生活
                   </Link>
-                  <Link href="/blogs?category=fashion" className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-teal-600">
+                  <Link href="/blogs?category=fashion" className="block px-4 py-2 text-[#333333] hover:bg-gray-50 hover:text-teal-600">
                     时尚
                   </Link>
-                  <Link href="/blogs?category=business" className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-teal-600">
+                  <Link href="/blogs?category=business" className="block px-4 py-2 text-[#333333] hover:bg-gray-50 hover:text-teal-600">
                     商业
                   </Link>
                 </div>
               </div>
             </div>
-            <Link href="/blog" className="text-gray-700 hover:text-teal-600 font-medium transition-colors">
+            <Link href="/blog" className="text-[#333333] hover:text-teal-600 font-medium transition-colors">
               文章
             </Link>
           </nav>
@@ -70,34 +74,46 @@ export default function Header() {
                 <input
                   type="text"
                   placeholder="一个人的旅行"
-                  className="w-120 pl-10 pr-4 py-2 text-sm border bg-white border-white rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
+                  className="w-103 pl-6 pr-4 py-2 text-sm border bg-white border-white rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
                 />
-                <svg className="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
+                <Image
+                  src="/index/sh.svg"
+                  alt="arrow-down"
+                  className="hover:text-teal-600 absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4"
+                  width={12}
+                  height={12}
+                />
               </div>
             </div>
 
             {/* 搜索按钮 (移动端) */}
             <button className="lg:hidden p-2 text-gray-600 hover:text-teal-600 transition-colors">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
+              <Image
+                src="/index/ed.svg"
+                alt="arrow-down"
+                className="hover:text-teal-600"
+                width={12}
+                height={12}
+              />
             </button>
 
             {/* 编辑按钮 */}
-            <button className="p-2 text-gray-600 hover:text-teal-600 transition-colors">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-              </svg>
+            <button className="p-2 text-[] hover:text-teal-600 transition-colors">
+              <Image
+                src="/index/ed.svg"
+                alt="arrow-down"
+                className="hover:text-teal-600"
+                width={18}
+                height={18}
+              />
             </button>
 
             {/* 导航链接 */}
-            <div className="hidden md:flex items-center gap-6">
-              <Link href="/about" className="text-gray-600 hover:text-teal-600 transition-colors">
+            <div className="hidden md:flex items-center gap-9">
+              <Link href="/about" className="text-[] hover:text-teal-600 transition-colors">
                 关于
               </Link>
-              <Link href="/contact" className="text-gray-600 hover:text-teal-600 transition-colors">
+              <Link href="/contact" className="text-[] hover:text-teal-600 transition-colors">
                 联系我们
               </Link>
             </div>
@@ -113,9 +129,13 @@ export default function Header() {
                     height={40}
                   ></Image>
                 </div>
-                <svg className="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
+                <Image
+                  src="/index/se.svg"
+                  alt="arrow-down"
+                  className="hover:text-teal-600"
+                  width={12}
+                  height={12}
+                />
               </button>
 
               {/* 用户下拉菜单 */}
@@ -163,7 +183,7 @@ export default function Header() {
             </label>
 
             {/* 移动端菜单按钮 */}
-            <button className="md:hidden p-2 text-gray-600 hover:text-teal-600 transition-colors">
+            <button className="md:hidden p-2 text-[] hover:text-teal-600 transition-colors">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               </svg>

@@ -20,53 +20,54 @@ export default function RootLayout({
       >
         <Header />
         {children}
-        <footer className="footer sm:footer-horizontal bg-[#F2F8F7] p-6 h-80 pt-20 justify-items-center">
+        <footer className="footer sm:footer-horizontal bg-[#F2F8F7] p-6 h-[384px] pt-20 justify-items-center">
           <aside className="">
             <Image
               aria-hidden
-              src="/index/logo.png"
+              src="/index/logo2.png"
               alt="Home"
               width={192}
               height={192}
               style={{
-                width: '118px',
-                height: '28px',
+                width: '200px',
+                height: '40px',
                 objectFit: 'cover'
               }}
             />
-            <p className="text-[#555555] mt-10">
-              疲惫生活的加油站，为您留住美好
+            <p className="text-[#A5A5A5] mt-9 leading-7 w-[268px]">
+              在快节奏里喘不过气？来 Time Zone
               <br />
-              的时光与回忆～
+              治愈岛屿！疲惫生活的加油站，为您
+              <br />留住美好的时光与回忆～
             </p>
           </aside>
           <nav>
             <h6 className="footer-title text-[#000000]">blogs</h6>
-            <a className="link link-hover text-[#555555]">旅行</a>
-            <a className="link link-hover text-[#555555]">美食</a>
-            <a className="link link-hover text-[#555555]">日常生活</a>
-            <a className="link link-hover text-[#555555]">时尚</a>
-            <a className="link link-hover text-[#555555]">商业</a>
+            <a className="link link-hover text-[#555555] mt-2">旅行</a>
+            <a className="link link-hover text-[#555555] mt-2">美食</a>
+            <a className="link link-hover text-[#555555] mt-2">日常生活</a>
+            <a className="link link-hover text-[#555555] mt-2">时尚</a>
+            <a className="link link-hover text-[#555555] mt-2">商业</a>
           </nav>
           <nav>
             <h6 className="footer-title text-[#000000]">技术支持</h6>
-            <a className="link link-hover text-[#555555]">FAQ</a>
-            <a className="link link-hover text-[#555555]">技术支持</a>
-            <a className="link link-hover text-[#555555]">Jobs</a>
-            <a className="link link-hover text-[#555555]">隐私政策</a>
+            <a className="link link-hover text-[#555555] mt-2">FAQ</a>
+            <a className="link link-hover text-[#555555] mt-2">技术支持</a>
+            <a className="link link-hover text-[#555555] mt-2">Jobs</a>
+            <a className="link link-hover text-[#555555] mt-2">隐私政策</a>
           </nav>
           <nav className="">
             <h6 className="footer-title text-[#000000]">意见反馈</h6>
-            <div className="join">
+            <div className="join mt-4">
               <input
                 type="text"
                 placeholder="一个人的旅行"
-                className="w-80 pl-4 text-sm border bg-white border-gray-200 rounded-lg rounded-r-none focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
+                className="w-80 pl-4 text-sm border bg-white border-none rounded-lg rounded-r-none focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
               />
-              <button className="btn btn-neutral bg-[#00AAA1] border-0 shadow-none join-item w-20">发送</button>
+              <button className="btn btn-neutral bg-[#00AAA1] border-0 shadow-none join-item w-20 text-white">发送</button>
             </div>
-            <h6 className="footer-title text-[#000000]">关注我们</h6>
-            <div className="grid grid-cols-4 gap-4">
+            <h6 className="footer-title text-[#000000] mt-6">关注我们</h6>
+            <div className="grid grid-cols-4 gap-4 mt-4">
               <Image
                 aria-hidden
                 src="/wx.svg"

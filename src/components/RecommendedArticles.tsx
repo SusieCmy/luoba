@@ -10,6 +10,7 @@ interface Article {
   date: string;
   views: string;
   image: string;
+  avatar: string;
 }
 
 const articles: Article[] = [
@@ -21,7 +22,8 @@ const articles: Article[] = [
     author: "Jessica Koti",
     date: "2023-10-05 21:53:57",
     views: "123人看过",
-    image: "/index/wz1.png"
+    image: "/index/wz1.png",
+    avatar: "/index/tx5.png"
   },
   {
     id: 2,
@@ -31,7 +33,8 @@ const articles: Article[] = [
     author: "科技客串",
     date: "2023-10-05 21:53:57",
     views: "456人看过",
-    image: "/index/wz2.png"
+    image: "/index/wz2.png",
+    avatar: "/index/tx6.png"
   },
   {
     id: 3,
@@ -41,7 +44,8 @@ const articles: Article[] = [
     author: "程序员小王",
     date: "2023-10-05 21:53:57",
     views: "789人看过",
-    image: "/index/wz3.png"
+    image: "/index/wz3.png",
+    avatar: "/index/tx7.png"
   },
   {
     id: 4,
@@ -51,7 +55,8 @@ const articles: Article[] = [
     author: "Linda Trender",
     date: "2023-10-05 21:53:57",
     views: "321人看过",
-    image: "/index/wz4.png"
+    image: "/index/wz4.png",
+    avatar: "/index/tx8.png"
   },
   {
     id: 5,
@@ -61,7 +66,8 @@ const articles: Article[] = [
     author: "大美大理",
     date: "2023-10-05 21:53:57",
     views: "654人看过",
-    image: "/index/wz5.png"
+    image: "/index/wz5.png",
+    avatar: "/index/tx9.png"
   },
   {
     id: 6,
@@ -71,13 +77,14 @@ const articles: Article[] = [
     author: "李现心理",
     date: "2023-10-05 21:53:57",
     views: "987人看过",
-    image: "/index/wz6.png"
+    image: "/index/wz6.png",
+    avatar: "/index/tx10.png"
   }
 ];
 
 export default function RecommendedArticles() {
   return (
-    <section className="bg-white py-16">
+    <section className="bg-white py-18">
       <div className="max-w-7xl mx-auto px-6">
         {/* 标题栏 */}
         <div className="flex items-center mb-12">
@@ -117,7 +124,13 @@ export default function RecommendedArticles() {
                   <div className="flex items-center justify-between text-sm text-gray-500">
                     <div className="flex items-center gap-3">
                       <div className="flex items-center gap-2">
-                        <div className="w-5 h-5 bg-gray-300 rounded-full"></div>
+                        <Image
+                          src={article.avatar}
+                          alt={article.author}
+                          width={24}
+                          height={24}
+                          className="w-5 h-5 rounded-full"
+                        />
                         <span>{article.author}</span>
                       </div>
                       <span className="w-[1px] h-2 bg-[#ccc] rounded-[10px]"></span>

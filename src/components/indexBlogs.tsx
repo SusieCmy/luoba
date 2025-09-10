@@ -65,7 +65,7 @@ const sidebarPosts: SidebarPost[] = [
 export default function BlogsPage() {
     return (
         <div className="bg-white">
-            <div className="max-w-7xl mx-auto px-6 py-8 pt-16 pb-0">
+            <div className="max-w-7xl mx-auto px-6 py-8 pt-18 pb-0">
                 <div className="flex gap-8">
                     {/* 主内容区 */}
                     <div className="flex-1">
@@ -82,12 +82,12 @@ export default function BlogsPage() {
                                                 src={post.image}
                                                 alt={post.title}
                                                 fill
-                                                className="object-cover rounded-l-lg"
+                                                className="object-cover rounded-lg"
                                             />
                                         </div>
                                         <div className="flex flex-1 px-6 flex-col justify-between">
                                             <div className="flex items-center gap-2 mb-3">
-                                                <span className="bg-teal-500 text-white px-3 py-1 rounded-lg text-sm">
+                                                <span className="bg-teal-500 text-white px-3 py-1 rounded-[4px] text-sm">
                                                     {post.category}
                                                 </span>
                                             </div>
@@ -103,6 +103,7 @@ export default function BlogsPage() {
                                                         <img src={`/index/tx${post.id}.png`} width={18} height={18} alt="" />
                                                         <span>{post.author}</span>
                                                     </div>
+                                                    <span className="w-[1px] h-2 bg-[#ccc] rounded-[10px]"></span>
                                                     <span className="flex">
                                                         <img src="/index/tm.svg" alt="" />
                                                         <p className="ml-1">{post.date}</p>
@@ -124,7 +125,7 @@ export default function BlogsPage() {
                                 <div className="bg-white rounded-lg p-6 py-0 pr-0">
                                     <div className="space-y-6">
                                         {sidebarPosts.map((post) => (
-                                            <article key={post.id} className="pb-4 last:pb-0 h-40 bg-[#FAFAFA] p-4">
+                                            <article key={post.id} className="pb-4 last:pb-0 h-40 bg-[#FAFAFA] p-4 hover:bg-[#F2F8F7] rounded-[8px]">
                                                 <div className="flex items-center text-xs text-gray-500">
                                                     <span className="text-[#00AAA1]">{post.author}</span>
                                                     <span className="w-[1px] h-2 bg-[#ccc] mx-2 rounded-[10px]"></span>

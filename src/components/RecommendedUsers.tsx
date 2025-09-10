@@ -61,7 +61,7 @@ const users: User[] = [
 
 export default function RecommendedUsers() {
   return (
-    <section className="bg-white py-16 pb-0">
+    <section className="bg-white py-18 pb-0">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between mb-12">
           <div className="flex items-center">
@@ -84,7 +84,7 @@ export default function RecommendedUsers() {
           {users.map((user) => (
             <div
               key={user.id}
-              className={`relative p-6 rounded-[14px] transition-all bg-[#FAFAFA] duration-300 hover:shadow-lg hover:bg-gradient-to-br from-teal-50 to-blue-50 border-2 border-[#fff] hover:border-teal-300`}
+              className={`relative p-6 py-13 rounded-[14px] transition-all bg-[#FAFAFA] duration-300 hover:shadow-lg hover:bg-gradient-to-br from-teal-50 to-blue-50 border-2 border-[#fff] hover:border-teal-300`}
             >
               <div className="text-center">
                 <div className="relative w-20 h-20 mx-auto mb-4">
@@ -103,7 +103,7 @@ export default function RecommendedUsers() {
                   {user.name}
                 </h3>
 
-                <p className="text-sm text-gray-600 mb-4 leading-relaxed">
+                <p className="text-sm text-gray-600 my-4 leading-relaxed">
                   {user.description}
                 </p>
 
@@ -112,8 +112,8 @@ export default function RecommendedUsers() {
                     <span
                       key={index}
                       className={`px-3 py-1 rounded-lg text-xs font-medium transition-colors ${tag.color === 'primary'
-                          ? 'bg-white border border-gray-300 text-gray-700 hover:bg-gray-50'
-                          : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                        ? 'bg-white border border-gray-300 text-gray-700 hover:bg-gray-50'
+                        : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
                         }`}
                     >
                       {tag.label}
