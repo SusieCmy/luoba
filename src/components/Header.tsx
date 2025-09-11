@@ -110,10 +110,10 @@ export default function Header() {
 
             {/* 导航链接 */}
             <div className="hidden md:flex items-center gap-9">
-              <Link href="/about" className="text-[] hover:text-teal-600 transition-colors">
+              <Link href="/about" className="text-[#333] hover:text-teal-600 transition-colors">
                 关于
               </Link>
-              <Link href="/contact" className="text-[] hover:text-teal-600 transition-colors">
+              <Link href="/contact" className="text-[#333] hover:text-teal-600 transition-colors">
                 联系我们
               </Link>
             </div>

@@ -59,12 +59,10 @@ export default function RootLayout({
           <nav className="">
             <h6 className="footer-title text-[#000000]">意见反馈</h6>
             <div className="join mt-4">
-              <input
-                type="text"
-                placeholder="一个人的旅行"
-                className="w-80 pl-4 text-sm border bg-white border-none rounded-lg rounded-r-none focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
-              />
-              <button className="btn btn-neutral bg-[#00AAA1] border-0 shadow-none join-item w-20 text-white">发送</button>
+              <label className="input border-none w-[438px] h-[52px] bg-[#DFF1F0] !rounded-[6px] !focus:outline-none !focus:ring-teal-500 shadow-none pr-1">
+                <input type="text" className="border-none !rounded-[6px] !focus:ring-teal-500 !focus:outline-none" placeholder="" />
+                <span className="badge badge-neutral bg-[#00AAA1] border-none badge-xs w-[100px] h-[46px] text-sm text-white">发送</span>
+              </label>
             </div>
             <h6 className="footer-title text-[#000000] mt-6">关注我们</h6>
             <div className="grid grid-cols-4 gap-4 mt-4">

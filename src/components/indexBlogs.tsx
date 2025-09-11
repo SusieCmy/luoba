@@ -38,7 +38,17 @@ const blogPosts: BlogPost[] = [
         views: "123人看过",
         category: "旅行",
         image: "/index/home2.png"
-    }
+    },
+    // {
+    //     id: 3,
+    //     title: "济宁市曲阜明故城沙拉打底裤旅游区科技上半年",
+    //     excerpt: "国家电网上海电力将紧急调用，启动应急电源，组织出动应急救援队伍和应急发电车等重点...",
+    //     author: "金陵明都饭",
+    //     date: "2023-10-05 21:53:57",
+    //     views: "123人看过",
+    //     category: "旅行",
+    //     image: "/index/home2.png"
+    // }
 ];
 
 const sidebarPosts: SidebarPost[] = [
@@ -74,9 +84,9 @@ export default function BlogsPage() {
                             <div className="w-1 h-4 bg-teal-500 ml-4  rounded-[10px]"></div>
                         </div>
                         <div className="flex">
-                            <div className="space-y-8">
+                            <div className="relative flex flex-col justify-between">
                                 {blogPosts.map((post) => (
-                                    <article key={post.id} className="flex bg-white rounded-lg transition-shadow duration-300">
+                                    <div key={post.id} className="flex bg-white rounded-lg transition-shadow duration-300">
                                         <div className="w-80 h-60 relative flex-shrink-0">
                                             <Image
                                                 src={post.image}
@@ -118,14 +128,17 @@ export default function BlogsPage() {
                                                 </div>
                                             </div>
                                         </div>
-                                    </article>
+                                    </div>
                                 ))}
+                                <div className="w-0.5 h-full bg-linear-to-bl from-[#00AAA1] absolute right-0 top-0 rounded-lg">
+
+                                </div>
                             </div>
                             <div className="w-120">
                                 <div className="bg-white rounded-lg p-6 py-0 pr-0">
                                     <div className="space-y-6">
                                         {sidebarPosts.map((post) => (
-                                            <article key={post.id} className="pb-4 last:pb-0 h-40 bg-[#FAFAFA] p-4 hover:bg-[#F2F8F7] rounded-[8px]">
+                                            <article key={post.id} className="pb-0 last:pb-0 h-40 bg-[#FAFAFA] p-4 hover:bg-[#F2F8F7] rounded-[8px]">
                                                 <div className="flex items-center text-xs text-gray-500">
                                                     <span className="text-[#00AAA1]">{post.author}</span>
                                                     <span className="w-[1px] h-2 bg-[#ccc] mx-2 rounded-[10px]"></span>
