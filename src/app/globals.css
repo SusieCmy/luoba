@@ -11,4 +11,6 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-
+.ant-form-item-additional {
+  margin-top: 10px;
+}
