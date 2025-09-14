@@ -62,7 +62,7 @@ const users: User[] = [
 export default function RecommendedUsers() {
   return (
     <section className="bg-white py-18 pb-0">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-[1440px] mx-auto px-[100px]">
         <div className="flex items-center justify-between mb-12">
           <div className="flex items-center">
             <h2 className="text-2xl font-semibold text-gray-900">推荐用户</h2>

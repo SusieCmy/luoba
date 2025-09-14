@@ -2,8 +2,8 @@ import Image from 'next/image'
 
 export default function BlogDetail() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 py-8">
+    <div className="min-h-screen bg-white">
+      <div className="max-w-[1440px] mx-auto px-4 py-8">
         <div className="flex gap-8">
           {/* 主内容区域 */}
           <div className="flex-1 bg-white rounded-lg ">
@@ -14,55 +14,65 @@ export default function BlogDetail() {
               </h1>
 
               <div className="flex items-center justify-between">
-                <div className="flex items-center space-x-3">
-                  <Image
-                    src="/index/tx1.png"
-                    alt="作者头像"
-                    width={40}
-                    height={40}
-                    className="rounded-full"
-                  />
-                  <div>
-                    <div className="text-sm font-medium text-gray-900">张三</div>
-                    <div className="text-xs text-gray-500">2024年12月15日 · 阅读时间 5分钟</div>
+                <div className="flex items-center gap-3 text-[#777777] text-[12px]">
+                  <div className="flex items-center gap-2">
+                    <Image
+                      src="/index/tx1.png"
+                      alt="作者头像"
+                      width={20}
+                      height={20}
+                      className="rounded-full"
+                    />
+                    <span>张三</span>
+                  </div>
+                  <span className="w-[1px] h-2 bg-[#ccc] rounded-[10px]"></span>
+                  <span className="flex">
+                    <img src="/index/tm.svg" alt="" />
+                    <p className="ml-1">2024年12月15日</p>
+                  </span>
+                  <span className="w-[1px] h-2 bg-[#ccc] rounded-[10px]"></span>
+                  <div className='flex items-center'>
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                    </svg>
+                    <span className='ml-1'>22人看过</span>
                   </div>
                 </div>
-
                 <div className="flex items-center space-x-4">
                   <button className="flex items-center space-x-1 text-gray-500 hover:text-red-500">
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                    </svg>
-                    <span className="text-sm">126</span>
+                    <Image
+                      src="/sc.svg"
+                      alt=""
+                      width={16}
+                      height={16}
+                    >
+                    </Image>
                   </button>
 
-                  <button className="flex items-center space-x-1 text-gray-500 hover:text-blue-500">
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-                    </svg>
-                    <span className="text-sm">45</span>
-                  </button>
-
-                  <button className="flex items-center space-x-1 text-gray-500 hover:text-green-500">
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z" />
-                    </svg>
-                    <span className="text-sm">分享</span>
+                  <button className="flex items-center space-x-1 text-gray-500 hover:text-red-500">
+                    <Image
+                      src="/zf.svg"
+                      alt=""
+                      width={16}
+                      height={17}
+                    >
+                    </Image>
                   </button>
                 </div>
               </div>
             </div>
 
             {/* 文章内容 */}
-            <div className="p-6">
+            <div className="p-6 pt-0">
               {/* 封面图片 */}
               <div className="mb-8">
                 <Image
                   src="/details/dt.png"
                   alt="文章封面"
                   width={800}
-                  height={400}
-                  className="w-full h-80 object-cover rounded-lg"
+                  height={479}
+                  className="w-full object-cover rounded-lg"
                 />
               </div>
 
@@ -116,12 +126,12 @@ export default function BlogDetail() {
                   <div className="flex-1">
                     <textarea
                       placeholder="写下你的想法..."
-                      className="w-full p-3 border border-[#D9D9D9] rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      className="w-full h-[180px] p-3 border border-[#D9D9D9] rounded-lg focus:border-[#00AAA1] resize-none focus:outline-none focus:ring-1 focus:ring-[#00AAA1]"
                       rows={3}
                     />
                     <div className="flex justify-end mt-2">
-                      <button className="bg-blue-500 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-600">
-                        发表评论
+                      <button className="bg-[#00AAA1] w-[76px] mt-2 text-white px-4 py-2 rounded-[4px] text-sm">
+                        评论
                       </button>
                     </div>
                   </div>
@@ -131,7 +141,7 @@ export default function BlogDetail() {
               {/* 评论列表 */}
               <div className="space-y-4">
                 {[1, 2, 3].map((item) => (
-                  <div key={item} className="flex space-x-3">
+                  <div key={item} className="flex space-x-3 mb-6">
                     <Image
                       src={`/index/tx${item}.png`}
                       alt="用户头像"
@@ -141,12 +151,12 @@ export default function BlogDetail() {
 
                     />
                     <div className="flex-1">
-                      <div className="bg-gray-50 rounded-lg p-3">
+                      <div className="bg-gray-50 rounded-lg p-6">
                         <div className="flex items-center space-x-2 mb-1">
                           <span className="font-medium text-sm text-gray-900">用户{item}</span>
                           <span className="text-xs text-gray-500">2小时前</span>
                         </div>
-                        <p className="text-sm text-gray-700">
+                        <p className="text-sm text-gray-700 mt-4">
                           很好的分享！作为同样的学习者，深有感触。确实需要坚持和实践，感谢分享经验。
                         </p>
                       </div>
@@ -162,29 +172,48 @@ export default function BlogDetail() {
           </div>
 
           {/* 右侧边栏 */}
-          <div className="w-80 space-y-6">
+          <div className="w-90 space-y-6">
             {/* 推荐作者 */}
-            <div className="bg-white rounded-lg  p-6">
+            {/* <div className="bg-white rounded-lg shadow-md shadow-[#DED6D6]/20 inset-shadow-sm p-6"> */}
+            <div className="bg-white rounded-lg shadow-[0_6px_28px_0_rgba(222,214,214,0.12)] p-5">
               <div className="flex items-center mb-8">
-                <h3 className="text-lg font-semibold text-gray-900">本周精选</h3>
+                <h3 className="text-lg font-semibold text-gray-900">推荐用户</h3>
                 <div className="w-1 h-4 bg-teal-500 ml-2 rounded-[10px]"></div>
               </div>
               <div className="space-y-4">
-                {[1, 2, 3].map((item) => (
-                  <div key={item} className="flex items-center space-x-3">
+                {[{
+                  id: 1,
+                  name: 'Jenny Kia',
+                  avatar: '/index/tx1.png',
+                  job: 'VLOG 博主, 户外运动爱好者',
+                  desc: '美食博主',
+                }, {
+                  id: 2,
+                  name: '赵轩海',
+                  avatar: '/index/tx2.png',
+                  job: '金融爱好者',
+                  desc: '金融爱好者',
+                }, {
+                  id: 3,
+                  name: '钱萌',
+                  avatar: '/index/tx3.png',
+                  job: '服装设计师，美食博主',
+                  desc: '服装设计师，美食博主',
+                }].map((item) => (
+                  <div key={item.id} className="flex items-center space-x-3 mt-[40px]">
                     <Image
-                      src={`/index/tx${item}.png`}
-                      alt={`推荐作者${item}`}
-                      width={40}
-                      height={40}
+                      src={`/index/tx${item.id}.png`}
+                      alt={item.name}
+                      width={48}
+                      height={48}
                       className="rounded-full"
                     />
-                    <div className="flex-1">
-                      <div className="font-medium text-sm text-gray-900">推荐作者{item}</div>
-                      <div className="text-xs text-gray-500">前端开发工程师</div>
+                    <div className="flex-1 flex h-[48px] flex-col justify-between">
+                      <div className="font-medium text-sm text-[#555555]">{item.name}</div>
+                      <div className="text-xs text-[#777777]">{item.job}</div>
                     </div>
-                    <button className="bg-[#00AAA1] text-white px-3 py-1 rounded-lg text-xs">
-                      关注
+                    <button className={`bg-[#00AAA1] w-[76px] px-4 py-2 rounded-[4px] text-sm ${item.id === 3 ? 'bg-[#F2F8F7] text-[#666666]' : 'bg-[#00AAA1] text-white'}`}>
+                      {item.id === 3 ? '已关注' : '关注'}
                     </button>
                   </div>
                 ))}
@@ -195,51 +224,77 @@ export default function BlogDetail() {
             <Image
               src="/details/adv.png"
               alt="广告"
-              width={320}
+              width={359}
               height={120}
+              className='my-18 rounded-[6px]'
             ></Image>
 
-            {/* 最新动态 */}
-            <div className="bg-white rounded-lg  p-6">
-              <div className="flex items-center mb-8">
-                <h3 className="text-lg font-semibold text-gray-900">最新动态</h3>
-                <div className="w-1 h-4 bg-teal-500 ml-2 rounded-[10px]"></div>
-              </div>
-              <div className="space-y-4">
-                {[1, 2, 3, 4].map((item) => (
-                  <div key={item} className="border-l-2 border-blue-500 pl-3">
-                    <div className="text-sm text-gray-900 mb-1">
-                      React 18 新特性详解
-                    </div>
-                    <div className="text-xs text-gray-500">2小时前</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
             {/* 相关文章 */}
-            <div className="bg-white rounded-lg  p-6">
+            <div className="bg-white rounded-lg p-5 shadow-[0_6px_28px_0_rgba(222,214,214,0.12)]">
               <div className="flex items-center mb-8">
                 <h3 className="text-lg font-semibold text-gray-900">相关文章</h3>
                 <div className="w-1 h-4 bg-teal-500 ml-2 rounded-[10px]"></div>
               </div>
               <div className="space-y-4">
-                {[1, 2, 3].map((item) => (
-                  <div key={item} className="flex space-x-3">
-                    <Image
-                      src={`/index/tx${item}.png`}
-                      alt={`相关文章${item}`}
-                      width={40}
-                      height={32}
-                      className="rounded-lg object-cover"
-                    />
-                    <div className="flex-1">
-                      <h4 className="text-sm font-medium text-gray-900 mb-1 line-clamp-2">
-                        前端开发最佳实践指南
-                      </h4>
-                      <div className="text-xs text-gray-500">3天前 · 1.2k 阅读</div>
+                {[{
+                  id: 1,
+                  name: '一只小布丁',
+                  title: '今日打卡禾木景区，收获了意哈喜喜想惊喜...',
+                  cover: '/details/tx1.png',
+                  date: '3小时前',
+                }, {
+                  id: 2,
+                  name: 'David Anke',
+                  title: '奥迪在中国为什么掉队了？被拖入深渊',
+                  cover: '/details/tx2.png',
+                  date: '一周前',
+                }, {
+                  id: 3,
+                  name: '11点前睡觉',
+                  title: '猪油这么香，为什么却没人吃了呢？',
+                  cover: '/details/tx3.png',
+                  date: '2023-08-10',
+                }, {
+                  id: 4,
+                  name: '11点前睡觉',
+                  title: '在以学铸魂上下功夫（专题深思）',
+                  cover: '/details/tx4.png',
+                  date: '2023-08-10',
+                }].map((item) => (
+                  <div key={item.id} className={`flex space-x-3 flex-col pb-[28px] border-dotted border-[#D1E7E5] ${item.id === 4 ? 'border-b-0' : 'border-b-2'}`}>
+                    <div className='rounded-lg w-full flex items-center justify-between'>
+                      <div className='flex items-center'>
+                        <Image
+                          src={item.cover}
+                          alt={item.title}
+                          width={40}
+                          height={32}
+                          className="rounded-lg object-cover"
+                        />
+                        <div className="text-[14px] text-[#A5A5A5] ml-2">{item.name}</div>
+                      </div>
+                      <div className='text-[#A5A5A5] text-[14px]'>{item.date}</div>
                     </div>
+                    <div className='text-[#1C1C1C] mt-6'>{item.title}</div>
                   </div>
+                ))}
+              </div>
+            </div>
+            {/* 相关文章 */}
+            <div className="bg-white rounded-lg p-4 px-0">
+              <div className="flex items-center mb-8">
+                <h3 className="text-lg font-semibold text-gray-900">精选图片</h3>
+                <div className="w-1 h-4 bg-teal-500 ml-2 rounded-[10px]"></div>
+              </div>
+              <div className="grid grid-cols-3 gap-2">
+                {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((item) => (
+                  <Image
+                    src={`/details/tp${item}.png`}
+                    alt={`tx${item}`}
+                    width={113}
+                    height={113}
+                    className="rounded-[2px] object-cover w-[113px] h-[113px]"
+                  />
                 ))}
               </div>
             </div>

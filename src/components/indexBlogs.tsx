@@ -75,7 +75,7 @@ const sidebarPosts: SidebarPost[] = [
 export default function BlogsPage() {
     return (
         <div className="bg-white">
-            <div className="max-w-7xl mx-auto px-6 py-8 pt-18 pb-0">
+            <div className="max-w-[1440px] mx-auto px-[100px] py-8 pt-18 pb-0">
                 <div className="flex gap-8">
                     {/* 主内容区 */}
                     <div className="flex-1">
@@ -130,9 +130,11 @@ export default function BlogsPage() {
                                         </div>
                                     </div>
                                 ))}
-                                <div className="w-0.5 h-full bg-linear-to-bl from-[#00AAA1] absolute right-0 top-0 rounded-lg">
-
-                                </div>
+                                {/* // bg-linear-to-bl from-[#00AAA1] to-[#fff] */}
+                                {/* <div className="w-0.5 h-full 
+                                bg-linear-to-bl/increasing from-[#00AAA1] to-[#fff]
+                                 absolute right-0 top-0 rounded-lg">
+                                </div> */}
                             </div>
                             <div className="w-120">
                                 <div className="bg-white rounded-lg p-6 py-0 pr-0">
@@ -144,7 +146,7 @@ export default function BlogsPage() {
                                                     <span className="w-[1px] h-2 bg-[#ccc] mx-2 rounded-[10px]"></span>
                                                     <span>{post.date}</span>
                                                 </div>
-                                                <p className="font-semibold text-[18px] leading-normal mt-4 text-[#555555] mb-2 cursor-pointer">
+                                                <p className="font-[600] text-[18px] leading-normal mt-4 text-[#555555] mb-2 cursor-pointer">
                                                     {post.title}
                                                 </p>
                                             </article>

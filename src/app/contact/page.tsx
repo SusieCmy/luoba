@@ -18,8 +18,8 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="min-h-screen bg-white py-16">
-      <div className="max-w-7xl mx-auto">
+    <div className="min-h-[70vh] bg-white py-16">
+      <div className="max-w-[1440px] mx-auto">
         {/* 页面标题 */}
         <h1 className="text-3xl font-bold text-center text-gray-900 mb-16">联系我们</h1>
 

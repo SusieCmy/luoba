@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="bg-[#f2f8f7] shadow-sm border-b border-gray-100 sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-6">
+    <header className="bg-[#f2f8f7] shadow-[0px 2px 30px 0px rgba(230,230,230,0.68)] border-b border-gray-100 sticky top-0 z-50">
+      <div className="max-w-[1440px] mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* 左侧 Logo */}
           <div className="flex items-center">
@@ -26,11 +26,11 @@ export default function Header() {
 
           {/* 中间导航菜单 */}
           <nav className="hidden md:flex items-center gap-8">
-            <Link href="/" className="text-[#333333] hover:text-teal-600 font-medium transition-colors">
+            <Link href="/" className="text-[#333333] hover:text-teal-600  transition-colors">
               主页
             </Link>
             <div className="relative group">
-              <button className="flex items-center gap-1 text-[#333333] hover:text-teal-600 font-medium transition-colors">
+              <button className="flex items-center gap-1 text-[#333333] hover:text-teal-600  transition-colors">
                 分类
                 <Image
                   src="/index/se.svg"
@@ -43,25 +43,25 @@ export default function Header() {
               {/* 下拉菜单 */}
               <div className="absolute top-full left-0 mt-1 w-48 bg-white shadow-lg rounded-lg border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                 <div className="py-2">
-                  <Link href="/blogs?category=travel" className="block px-4 py-2 text-[#333333] hover:bg-gray-50 hover:text-teal-600">
+                  <Link href="/categories" className="block px-4 py-2 text-[#333333] hover:bg-gray-50 hover:text-teal-600">
                     旅行
                   </Link>
-                  <Link href="/blogs?category=food" className="block px-4 py-2 text-[#333333] hover:bg-gray-50 hover:text-teal-600">
+                  <Link href="/categories" className="block px-4 py-2 text-[#333333] hover:bg-gray-50 hover:text-teal-600">
                     美食
                   </Link>
-                  <Link href="/blogs?category=lifestyle" className="block px-4 py-2 text-[#333333] hover:bg-gray-50 hover:text-teal-600">
+                  <Link href="/categories" className="block px-4 py-2 text-[#333333] hover:bg-gray-50 hover:text-teal-600">
                     日常生活
                   </Link>
-                  <Link href="/blogs?category=fashion" className="block px-4 py-2 text-[#333333] hover:bg-gray-50 hover:text-teal-600">
+                  <Link href="/categories" className="block px-4 py-2 text-[#333333] hover:bg-gray-50 hover:text-teal-600">
                     时尚
                   </Link>
-                  <Link href="/blogs?category=business" className="block px-4 py-2 text-[#333333] hover:bg-gray-50 hover:text-teal-600">
+                  <Link href="/categories" className="block px-4 py-2 text-[#333333] hover:bg-gray-50 hover:text-teal-600">
                     商业
                   </Link>
                 </div>
               </div>
             </div>
-            <Link href="/blog" className="text-[#333333] hover:text-teal-600 font-medium transition-colors">
+            <Link href="/blog" className="text-[#333333] hover:text-teal-600 transition-colors">
               文章
             </Link>
           </nav>
@@ -74,12 +74,12 @@ export default function Header() {
                 <input
                   type="text"
                   placeholder="一个人的旅行"
-                  className="w-103 pl-6 pr-4 py-2 text-sm border bg-white border-white rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
+                  className="w-[530px] pl-4 pr-4 py-2 text-sm border bg-white border-white rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
                 />
                 <Image
                   src="/index/sh.svg"
                   alt="arrow-down"
-                  className="hover:text-teal-600 absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4"
+                  className="hover:text-teal-600 absolute right-4 top-1/2 transform -translate-y-1/2 w-4 h-4"
                   width={12}
                   height={12}
                 />

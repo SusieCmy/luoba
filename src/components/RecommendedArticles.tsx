@@ -85,7 +85,7 @@ const articles: Article[] = [
 export default function RecommendedArticles() {
   return (
     <section className="bg-white py-18">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-[1440px] mx-auto px-[100px]">
         {/* 标题栏 */}
         <div className="flex items-center mb-12">
           <h2 className="text-2xl font-semibold text-gray-900">全部文章</h2>
