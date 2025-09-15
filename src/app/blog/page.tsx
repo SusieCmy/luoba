@@ -3,7 +3,7 @@ import Image from 'next/image'
 export default function BlogDetail() {
   return (
     <div className="min-h-screen bg-white">
-      <div className="max-w-[1440px] mx-auto px-4 py-8">
+      <div className="max-w-[1440px] mx-auto px-[100px] py-8">
         <div className="flex gap-8">
           {/* 主内容区域 */}
           <div className="flex-1 bg-white rounded-lg ">
@@ -64,7 +64,7 @@ export default function BlogDetail() {
             </div>
 
             {/* 文章内容 */}
-            <div className="p-6 pt-0">
+            <div className="p-6 pt-0 px-0">
               {/* 封面图片 */}
               <div className="mb-8">
                 <Image
@@ -226,11 +226,11 @@ export default function BlogDetail() {
               alt="广告"
               width={359}
               height={120}
-              className='my-18 rounded-[6px]'
+              className='my-16 rounded-[6px] '
             ></Image>
 
             {/* 相关文章 */}
-            <div className="bg-white rounded-lg p-5 shadow-[0_6px_28px_0_rgba(222,214,214,0.12)]">
+            <div className="bg-white rounded-lg p-5 pt-4 shadow-[0_6px_28px_0_rgba(222,214,214,0.12)]">
               <div className="flex items-center mb-8">
                 <h3 className="text-lg font-semibold text-gray-900">相关文章</h3>
                 <div className="w-1 h-4 bg-teal-500 ml-2 rounded-[10px]"></div>
@@ -281,7 +281,7 @@ export default function BlogDetail() {
               </div>
             </div>
             {/* 相关文章 */}
-            <div className="bg-white rounded-lg p-4 px-0">
+            <div className="bg-white rounded-lg p-5 px-0 pt-4">
               <div className="flex items-center mb-8">
                 <h3 className="text-lg font-semibold text-gray-900">精选图片</h3>
                 <div className="w-1 h-4 bg-teal-500 ml-2 rounded-[10px]"></div>

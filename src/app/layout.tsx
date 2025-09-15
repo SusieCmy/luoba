@@ -60,7 +60,7 @@ export default function RootLayout({
             <h6 className="footer-title text-[#000000]">意见反馈</h6>
             <div className="join mt-2 relative">
               <input type="text" className="border-none w-[438px] h-[52px] bg-[#DFF1F0] pl-4 !rounded-[6px] focus:border-[#00AAA1] resize-none focus:outline-none focus:ring-1 focus:ring-[#00AAA1]" placeholder="" />
-              <span className="badge absolute right-1 top-1 badge-neutral bg-[#00AAA1] border-none badge-xs w-[100px] h-[46px] text-sm text-white">发送</span>
+              <span className="badge absolute right-1 top-[3.8px] badge-neutral bg-[#00AAA1] border-none badge-xs w-[100px] h-[45px] text-sm text-white">发送</span>
             </div>
             <h6 className="footer-title text-[#000000] mt-6">关注我们</h6>
             <div className="grid grid-cols-4 gap-4 mt-2">

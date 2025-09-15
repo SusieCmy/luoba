@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header className="bg-[#f2f8f7] shadow-[0px 2px 30px 0px rgba(230,230,230,0.68)] border-b border-gray-100 sticky top-0 z-50">
       <div className="max-w-[1440px] mx-auto px-6">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center h-16">
           {/* 左侧 Logo */}
           <div className="flex items-center">
             <Link href="/" className="flex items-center gap-2">
@@ -25,11 +25,11 @@ export default function Header() {
           </div>
 
           {/* 中间导航菜单 */}
-          <nav className="hidden md:flex items-center gap-8">
-            <Link href="/" className="text-[#333333] hover:text-teal-600  transition-colors">
+          <nav className="hidden md:flex items-center">
+            <Link href="/" className="text-[#333333] hover:text-teal-600  transition-colors ml-10">
               主页
             </Link>
-            <div className="relative group">
+            <div className="relative group ml-10">
               <button className="flex items-center gap-1 text-[#333333] hover:text-teal-600  transition-colors">
                 分类
                 <Image
@@ -61,7 +61,7 @@ export default function Header() {
                 </div>
               </div>
             </div>
-            <Link href="/blog" className="text-[#333333] hover:text-teal-600 transition-colors">
+            <Link href="/blog" className="text-[#333333] hover:text-teal-600 transition-color ml-10">
               文章
             </Link>
           </nav>
@@ -69,7 +69,7 @@ export default function Header() {
           {/* 右侧功能区 */}
           <div className="flex items-center gap-10">
             {/* 搜索框 */}
-            <div className="hidden lg:flex items-center">
+            <div className="hidden lg:flex items-center ml-10">
               <div className="relative">
                 <input
                   type="text"

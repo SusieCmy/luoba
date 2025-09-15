@@ -138,9 +138,9 @@ export default function BlogsPage() {
                             </div>
                             <div className="w-120">
                                 <div className="bg-white rounded-lg p-6 py-0 pr-0">
-                                    <div className="space-y-6">
+                                    <div className="space-y-7">
                                         {sidebarPosts.map((post) => (
-                                            <article key={post.id} className="pb-0 last:pb-0 h-40 bg-[#FAFAFA] p-4 hover:bg-[#F2F8F7] rounded-[8px]">
+                                            <article key={post.id} className="pb-0 last:pb-0 h-[158px] bg-[#FAFAFA] p-4 hover:bg-[#F2F8F7] rounded-[8px]">
                                                 <div className="flex items-center text-xs text-gray-500">
                                                     <span className="text-[#00AAA1]">{post.author}</span>
                                                     <span className="w-[1px] h-2 bg-[#ccc] mx-2 rounded-[10px]"></span>
