@@ -121,16 +121,19 @@ export default function ContactPage() {
 
             {/* 联系方式 */}
             <div className="space-y-4">
-              <div className='mt-[46px]'>
-                <p className="text-[#222222]">Susieoice@Gmail.Com</p>
+              <div className='mt-[40px]'>
+                <h3>邮箱</h3>
+                <p className="text-[#777777] mt-2">Susieoice@Gmail.Com</p>
               </div>
 
-              <div>
-                <p className="text-[#222222]">+132 0315 8984</p>
+              <div className='my-[40px]'>
+                <h3>联系电话</h3>
+                <p className="text-[#777777] mt-2">+132 0315 8984</p>
               </div>
 
-              <div className='my-[46px]'>
-                <p className="text-[#777777]">客服在线时间 10:00-20:00</p>
+              <div className='my-[40px]'>
+                <h3>在线时间</h3>
+                <p className="text-[#777777] mt-2">客服在线时间 10:00-20:00</p>
               </div>
             </div>
 

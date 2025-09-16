@@ -8,7 +8,7 @@ export default function BlogDetail() {
           {/* 主内容区域 */}
           <div className="flex-1 bg-white rounded-lg ">
             {/* 文章标题和作者信息 */}
-            <div className="p-6">
+            <div className="p-6 px-0">
               <h1 className="text-2xl font-bold text-gray-900 mb-4">
                 一年只有15天的限定秋色，喀纳斯到底有多美？9月一起去“我的阿勒泰”看看吧！
               </h1>

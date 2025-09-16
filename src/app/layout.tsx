@@ -20,7 +20,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
-        <footer className="footer sm:footer-horizontal bg-[#F2F8F7] p-6 h-[384px] pt-20 justify-items-center">
+        <footer className="footer sm:footer-horizontal bg-[#F2F8F7] p-6 h-[344px] pt-20 justify-items-center">
           <aside className="">
             <Image
               aria-hidden

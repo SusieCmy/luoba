@@ -111,7 +111,7 @@ export default function RecommendedUsers() {
                   {user.tags.map((tag, index) => (
                     <span
                       key={index}
-                      className={`px-3 py-1 rounded-lg text-xs font-medium transition-colors ${tag.color === 'primary'
+                      className={`px-3 py-1 rounded-[4px] text-xs font-medium transition-colors ${tag.color === 'primary'
                         ? 'bg-white border border-gray-300 text-gray-700 hover:bg-gray-50'
                         : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
                         }`}
