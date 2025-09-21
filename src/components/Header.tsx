@@ -4,7 +4,7 @@ import { Switch } from 'antd';
 
 export default function Header() {
   return (
-    <header className="bg-[#f2f8f7] shadow-[0px 2px 30px 0px rgba(230,230,230,0.68)] border-b border-gray-100 sticky top-0 z-50">
+    <header className="bg-[#E8F3F3] shadow-[0px 2px 30px 0px rgba(230,230,230,0.68)] border-b border-gray-100 sticky top-0 z-50">
       <div className="max-w-[1440px] mx-auto px-6">
         <div className="flex items-center h-16">
           {/* 左侧 Logo */}
